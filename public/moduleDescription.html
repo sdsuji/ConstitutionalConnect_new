@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ConstitutionalConnect</title>
+    <link rel="icon" href="Src/images/favicon.jpeg">
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="userHeader.css">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="moduleDescription.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <header class="header_sec">
+        <nav>
+            <a href="userhome.html">Home<span></span></a>
+            <a href="userLearn.html" class="active">Learn<span></span></a>
+            
+            <a href="userAboutus.html">About Us<span></span></a>
+            <a href="userNewsletter.html">NewsLetter<span></span></a>
+            <div class="profile_icon_user">
+                <i class="fa fa-user profile-icon"></i>
+                <ul class="dropdown_menu">
+                    <li class="sub_item_userprofile">
+                        <p onclick="updateprofile()">Update Profile</p>
+                    </li>
+                    <li class="sub_item_userprofile">
+                        <p onclick="changepassword()">Change Password</p>
+                    </li>
+                    <li class="sub_item_userprofile">
+                        <p onclick="logout()">Log Out</p>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    
+  
+    <!-- Module Details Section -->
+    <div id="module-details" style="margin-top: 100px;">
+        <h1 id="module-title">Loading...</h1>
+        <p id="module-description">Please wait...</p>
+        <button id="start-learning-btn">Start Learning</button>
+    </div>
+        
+    
+
+    <!--footer-->
+    <footer class="footer-sec" style="position: unset;">
+        <div class="social-icons">
+            <a href="https://www.facebook.com/facebook/" class="profile-icon"><i class="fa fa-facebook"></i></a>
+            <a href="https://x.com/constituti91451" class="profile-icon"><i class="fa fa-twitter"></i></a>
+            <a href="https://www.instagram.com/constitutional_connect/" class="profile-icon"><i class="fa fa-instagram"></i></a>
+        </div>
+        <p>Constitutional Connect</p>
+    </footer>
+
+    <script src="userHeader.js"></script>
+    <script src="moduleDescription.js"></script>
+</body>
+</html>

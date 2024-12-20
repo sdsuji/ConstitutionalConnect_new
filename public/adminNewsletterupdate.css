@@ -1,0 +1,131 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image:linear-gradient(to right, #003332, #034c36, #Bdcdcf);
+}
+
+/* Newsletter Management Section */
+.container {
+    max-width: 1200px;
+    margin: 100px auto;
+    padding: 20px;
+    background: transparent;
+    border: 2px solid white;
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+    color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.container h1 {
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/* Newsletter List */
+.newsletter {
+    background-color: #f9f9f9;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.newsletter h3 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.newsletter p {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 15px;
+}
+
+.newsletter button {
+    margin-right: 10px;
+    padding: 8px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.newsletter button.btn-warning {
+    background-color: #90EE90;
+    color: black;
+}
+
+.newsletter button.btn-warning:hover {
+    background-color: rgb(250, 225, 177);
+    color: black;
+}
+
+.newsletter button.btn-danger {
+    background-color: #0b2b26;
+    color: white;
+}
+
+.newsletter button.btn-danger:hover {
+    background-color: rgb(250, 225, 177);
+    color: black;
+}
+
+#editnewsletter{
+    background-color: #90EE90;
+    color: black;
+    border: none;
+}
+
+#editnewsletter:hover{
+    background-color: rgb(250, 225, 177);
+    color: black;
+    border: none;
+}
+
+.btn-secondary{
+    background-color: #90EE90;
+    color: black;
+    border: none;
+}
+
+.btn-secondary:hover{
+    background-color: rgb(250, 225, 177);
+    color: black;
+    border: none;
+}
+/* Label for success and cancel messages */
+#successLabel, #cancelLabel, #errorLabel, #confirmationLabel {
+    display: none;
+    font-size: 20px;
+    color: white;
+    padding: 10px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+#cancelLabel, #errorLabel {
+    color: #dc3545; /* Red for cancel */
+}
+
+#confirmationLabel {
+    border-radius: 5px;
+    margin: 5px;
+    padding: 5px;
+    border: 2px solid red;
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+    color: white;
+}
+
+ /*p{
+    
+    font-weight: bolder;
+    font-size: 20px;
+    color: red;
+}*/

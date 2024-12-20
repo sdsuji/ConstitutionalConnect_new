@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ConstitutionalConnect</title>
+    <link rel="icon"  href="Src/images/favicon.jpeg">
+    <link href="Src/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="landingPage.css">
+    <link rel="stylesheet" href="adminLogin.css">
+</head>
+<body>
+    <div class="container-fluid p-0">
+        <div class="background-image-container">
+            <div class="second-div">
+                <div class="container">
+                    <form id="loginForm">
+                        <h1>Admin Login</h1>
+                        <div class="input-box1">
+                            <input type="text" placeholder="Email Address" id="email_id_login_admin">
+                            <span id="emailError" class="error" style="display:none; color: red;"></span>
+                            <input type="password" placeholder="Password" id="password_login_admin">
+                            <span id="passwordError" class="error" style="display:none; color: red;"></span>
+                            <span id="credentialsError" class="error" style="display:none; color: red;"></span>
+                        </div>  
+                        <div>
+                            <button type="submit" class="btn btn-success">Login</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+   
+    <script src="jquery-3.7.1.min.js"></script>
+    <script src="adminLogin.js"></script>
+</body>
+</html>

@@ -1,0 +1,85 @@
+.container {
+    width: 80%;
+    margin: 100px auto 50px; /* Top margin is 100px */
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+h1 {
+    text-align: center;
+    color: #2c3e50;
+    margin-bottom: 20px;
+    font-size: 32px;
+}
+
+.module-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: #ecf0f1;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.module-card h2 {
+    color: #34495e;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.module-card .score {
+    font-size: 20px;
+    color: #27ae60;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.module-card .no-score {
+    font-size: 20px;
+    color: #e74c3c;
+    font-weight: bold;
+}
+
+button {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #2980b9;
+}
+
+.no-modules {
+    text-align: center;
+    font-size: 18px;
+    color: #95a5a6;
+}
+
+/* Mobile responsive */
+@media screen and (max-width: 768px) {
+    .container {
+        width: 90%;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+
+    .module-card h2 {
+        font-size: 20px;
+    }
+
+    .module-card .score, .module-card .no-score {
+        font-size: 18px;
+    }
+}

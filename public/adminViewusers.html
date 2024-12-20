@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ConstitutionalConnect</title>
+    <link rel="icon"  href="Src/images/favicon.jpeg">
+    <link rel="stylesheet" href="adminHeader.css">
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="adminViewusers.css">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <header class="header_sec">
+        <nav>
+            <a href="adminHome.html">Home<span></span></a>
+            <a href="adminAddmodule.html">Add module<span></span></a>
+            <a href="adminEditmodule.html">Update module<span></span></a>
+            <a href="adminNewsletter.html">Add Newsletter<span></span></a>
+            <a href="adminViewusers.html" class="active">User details<span></span></a>
+            <div class="profile_icon_user">
+                <i class="fa fa-user profile-icon"></i>
+                <ul class="dropdown_menu">
+                    <li class="sub_item_userprofile">
+                        <p onclick="logout()">Log Out</p>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main style="margin-top: 100px;">
+        <div class="container">
+            <h1>Registered Users</h1>
+
+            <div class="search-container">
+                <input type="text" id="searchBar" placeholder="Search users by name or email" onkeyup="searchUsers()">
+            </div>
+            
+            <table id="userTable" class="table table-striped">
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>Name</th>
+                        <th>Profession</th>
+                        <th>Institution</th>
+                        <th>Email</th>
+                        <th>Phone</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Rows will be dynamically appended here -->
+                </tbody>
+            </table>
+        </div>
+    </main>
+    <div class="downloadbutton">
+        <button id="downloadBtn" class="btn btn-primary">Download User List</button>
+    </div>
+    
+    <!-- Footer -->
+    <footer class="footer-sec" style="position: unset;">
+        <div class="social-icons">
+            <a href="https://www.facebook.com/facebook/" class="profile-icon"><i class="fa fa-facebook"></i></a>
+            <a href="https://x.com/constituti91451" class="profile-icon"><i class="fa fa-twitter"></i></a>
+            <a href="https://www.instagram.com/constitutional_connect/" class="profile-icon"><i class="fa fa-instagram"></i></a>
+        </div>
+        <p>Constitutional Connect</p>
+    </footer>
+
+    <script src="adminHeader.js"></script>
+    <script src="adminViewusers.js"></script>
+</body>
+</html>

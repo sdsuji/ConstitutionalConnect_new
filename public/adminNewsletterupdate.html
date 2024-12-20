@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ConstitutionalConnect</title>
+    <link rel="icon"  href="Src/images/favicon.jpeg">
+    <link rel="stylesheet" href="adminHeader.css">
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="adminNewsletterupdate.css">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <header class="header_sec">
+        <nav>
+            <a href="adminHome.html">Home<span></span></a>
+            <a href="adminAddmodule.html">Add Module<span></span></a>
+            <a href="adminEditmodule.html">Update module<span></span></a>
+            <a href="adminNewsletter.html">Add Newsletter<span></span></a>
+            <a href="adminViewusers.html" >User details<span></span></a>
+            <a href="adminNewsletterupdate.html" class="active">Update Newsletter<span></span></a>
+            <div class="profile_icon_user">
+                <i class="fa fa-user profile-icon"></i>
+                <ul class="dropdown_menu">
+                    <li class="sub_item_userprofile">
+                        <p onclick="logout()">Log Out</p>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    
+    <!-- Newsletter Section -->
+    <div class="container">
+        <h1>Manage Newsletters</h1>
+        <!-- Success, Error, and Confirmation labels -->
+        <div id="successLabel" ></div>
+        <div id="errorLabel" ></div>
+         <div id="confirmationLabel"></div>
+        <div id="newsletters"></div>
+        
+
+    </div>
+    
+    <footer class="footer-sec" style="position: unset;">
+        <div class="social-icons">
+            <a href="https://www.facebook.com/facebook/" class="profile-icon" ><i class="fa fa-facebook"></i></a>
+            <a href="https://x.com/constituti91451" class="profile-icon"><i class="fa fa-twitter"></i></a>
+            <a href="https://www.instagram.com/constitutional_connect/" class="profile-icon"><i class="fa fa-instagram"></i></a>
+        </div>
+        <p>Constitutional Connect</p>
+    </footer>
+    <script src="userHeader.js"></script>
+
+    <script src="adminHeader.js"></script>
+    <script src="adminNewsletterupdate.js"></script>
+</body>
+</html>

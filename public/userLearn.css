@@ -1,0 +1,48 @@
+html, body {
+    height: 100%; 
+    margin: 0; 
+    background-image:linear-gradient(to right, #003332, #034c36, #Bdcdcf);
+  }
+
+  h5{
+    color: white;
+  }
+
+/* Styling for the Learn page */
+#modules-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    margin-top: 80px;
+}
+
+.module {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 10px;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+}
+
+.module img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+.module:hover {
+    transform: translateY(-10px);
+}
+
+.module:hover img {
+    transform: scale(1.05);
+}
+
+.module button {
+    display: none; /* Hide the button */
+}

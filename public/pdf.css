@@ -1,0 +1,64 @@
+
+
+
+
+/* Body Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-image:linear-gradient(to right, #003332, #034c36, #Bdcdcf);
+    color:white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    text-align: center;
+}
+
+/* Title Styles */
+h1 {
+    font-size: 2.5rem;
+    color:white;
+    margin-bottom: 30px;
+}
+
+/* Button Styles */
+button {
+    padding: 12px 24px;
+    font-size: 1.1rem;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+    background-color: #45a049;
+    transform: scale(1.05);
+}
+
+button:active {
+    background-color: #388e3c;
+}
+
+
+/* Alert Box Styles */
+.alert {
+    background-color: #4CAF50;
+    color: white;
+    padding: 15px;
+    margin-top: 20px;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    width: 100%;
+    max-width: 500px;
+    display: none;
+}
+
+.alert.show {
+    display: block;
+}
+

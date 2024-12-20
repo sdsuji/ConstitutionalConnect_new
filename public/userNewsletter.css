@@ -1,0 +1,42 @@
+html, body {
+    height: 100%; 
+    margin: 0; 
+    background-image:linear-gradient(to right, #003332, #034c36, #Bdcdcf);
+  }
+  
+  #newsletter-container {
+    padding-top: 100px; 
+}
+ 
+/* style for newsletters */
+.newsletter {
+  border: 2px solid #fff;
+  background-color: rgba(255, 255, 255, 0.8);
+  color: #333;
+  padding: 15px;
+  margin: 10px 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Color classes */
+.newsletter.first-time {
+  background-color: lightgreen;
+  color: black;
+}
+
+.newsletter.default {
+  background-color: white;
+  color: black;
+}
+
+.newsletter.updated {
+  background-color: rgb(252, 240, 218);
+  color: black;
+}
+
+/* Style for the heading */
+.newsletter h2 {
+  font-weight: bold;
+}

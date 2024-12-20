@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ConstitutionalConnect</title>
+    <link rel="icon"  href="Src/images/favicon.jpeg">
+    <link rel="stylesheet" href="adminHeader.css">
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="adminNewsletter.css">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+</head>
+<body>
+    <header class="header_sec">
+        <nav>
+            <a href="adminHome.html" >Home<span></span></a>
+            <a href="adminAddmodule.html">Add module<span></span></a>
+            <a href="adminEditmodule.html">Update module<span></span></a>
+            <a href="adminNewsletter.html" class="active">Add Newsletter<span></span></a>
+            <a href="adminViewusers.html" >User details<span></span></a>
+            <a href="adminNewsletterupdate.html">Update Newsletter<span></span></a>
+            <div class="profile_icon_user">
+                <i class=" fa fa-user profile-icon"></i>
+                <ul class="dropdown_menu">
+                    <li class="sub_item_userprofile">
+                        <p onclick="logout()">Log Out</p>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <!--body-->
+    <div class="container">
+        <form id="newsletter">
+            <h1>Add NewsLetter</h1>
+            <div class="input-box">
+                <input type="text" placeholder="Enter heading of the newsletter" id="h1_newsletter">
+                <textarea placeholder="Enter the news" id="paragraph_newsletter"></textarea>
+            </div>  
+            <div>
+                <button type="submit" class="btn btn-success">Create Newsletter</button>
+            </div>
+            <div id="statusLabel"></div>
+        </form>
+    </div>
+     <!--footer-->
+     <footer class="footer-sec" style="position: unset;">
+        <div class="social-icons">
+            <a href="https://www.facebook.com/facebook/" class="profile-icon" ><i class="fa fa-facebook"></i></a>
+            <a href="https://x.com/constituti91451" class="profile-icon"><i class="fa fa-twitter"></i></a>
+            <a href="https://www.instagram.com/constitutional_connect/" class="profile-icon"><i class="fa fa-instagram"></i></a>
+        </div>
+        <p>Constitutional Connect</p>
+    </footer>
+    <script src="adminHeader.js"></script>
+    <script src="adminNewsletter.js"></script>   
+</body>
+</html>

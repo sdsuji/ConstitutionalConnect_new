@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ConstitutionalConnect</title>
+    <link rel="icon" href="Src/images/favicon.jpeg">
+    <link rel="stylesheet" href="adminHeader.css">
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="adminAddmodule.css">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <header class="header_sec">
+        <nav>
+            <a href="adminHome.html">Home<span></span></a>
+            <a href="adminAddmodule.html" class="active">Add module<span></span></a>
+            <a href="adminEditmodule.html">Update module<span></span></a>
+            <a href="adminNewsletter.html">Add Newsletter<span></span></a>
+            <a href="adminViewusers.html">User details<span></span></a>
+            <div class="profile_icon_user">
+                <i class="fa fa-user profile-icon"></i>
+                <ul class="dropdown_menu">
+                    <li class="sub_item_userprofile">
+                        <p onclick="logout()">Log Out</p>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <body>
+        <div class="container">
+          <h1>Add New Module</h1>
+          <form id="moduleForm" enctype="multipart/form-data">
+            <label for="moduleTitle">Module Title:</label>
+            <input type="text" id="moduleTitle" name="title">
+            <span id="titleError" class="error"></span>
+        
+            <label for="moduleDescription">Description:</label>
+            <textarea id="moduleDescription" name="description"></textarea>
+            <span id="descriptionError" class="error"></span>
+        
+            <label for="moduleImage">Image:</label>
+            <input type="file" id="moduleImage" name="image">
+            <span id="imageError" class="error"></span>
+        
+            <label for="moduleVideo">Video:</label>
+            <input type="file" id="moduleVideo" name="video">
+            <span id="videoError" class="error"></span>
+        
+            <label for="modulePdf">PDF:</label>
+            <input type="file" id="modulePdf" name="pdf">
+            <span id="pdfError" class="error"></span>
+        
+            <div id="questionsContainer"></div>
+        
+            <button type="button" id="addQuestionBtn">Add Question</button>
+            <span id="nameError" class="error"></span>
+            <button type="submit">Submit Module</button>
+        </form>
+        </div>
+
+    <footer class="footer-sec" style="position: unset;">
+        <div class="social-icons">
+            <a href="https://www.facebook.com/facebook/" class="profile-icon"><i class="fa fa-facebook"></i></a>
+            <a href="https://x.com/constituti91451" class="profile-icon"><i class="fa fa-twitter"></i></a>
+            <a href="https://www.instagram.com/constitutional_connect/" class="profile-icon"><i class="fa fa-instagram"></i></a>
+        </div>
+        <p>Constitutional Connect</p>
+    </footer>
+
+    <script src="adminHeader.js"></script>
+    <script src="adminAddmodule.js"></script>
+</body>
+</html>

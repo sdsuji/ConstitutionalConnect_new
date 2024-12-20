@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ConstitutionalConnect</title>
+    <link rel="stylesheet" href="pdf.css">
+    <link rel="stylesheet" href="userHeader.css">
+    <link rel="icon"  href="Src/images/favicon.jpeg">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <header class="header_sec">
+        <nav>
+            <a href="userhome.html" >Home<span></span></a>
+            <a href="userLearn.html">Learn<span></span></a>
+           
+            <a href="userAboutus.html">About Us<span></span></a>
+            <a href="userNewsletter.html">NewsLetter<span></span></a>
+            <div class="profile_icon_user">
+                <i class=" fa fa-user profile-icon"></i>
+                <ul class="dropdown_menu">
+                    <li class="sub_item_userprofile">
+                        <p onclick="updateprofile()">Update Profile</p>
+                    </li>
+                    <li class="sub_item_userprofile">
+                        <p onclick="changepassword()">Change Password</p>
+                    </li>
+                    <li class="sub_item_userprofile">
+                        <p onclick="logout()">Log Out</p>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+<h1 style="color: white;">Module PDF</h1>
+
+<!-- Download Button -->
+<button id="download-btn">Download PDF</button>
+
+  <!--footer-->
+  <footer class="footer-sec">
+    <div class="social-icons">
+        <a href="https://www.facebook.com/facebook/" class="profile-icon" ><i class="fa fa-facebook"></i></a>
+        <a href="https://x.com/constituti91451" class="profile-icon"><i class="fa fa-twitter"></i></a>
+        <a href="https://www.instagram.com/constitutional_connect/" class="profile-icon"><i class="fa fa-instagram"></i></a>
+    </div>
+    <p>Constitutional Connect</p>
+</footer>
+
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+    const urlParams = new URLSearchParams(window.location.search);
+    const moduleId = urlParams.get('id');  // Get the module ID from URL
+
+    if (moduleId) {
+        // Fetch the module data from the backend
+        fetch(`/api/modules/${moduleId}`)
+            .then(response => response.json())
+            .then(module => {
+                console.log(module); // Log the response from the backend
+                const pdf = module.pdf; // Assuming your backend provides the PDF URL
+
+                // Set up the download button action
+                const downloadBtn = document.getElementById('download-btn');
+                downloadBtn.addEventListener('click', () => {
+                    // Initiate download by redirecting to the PDF URL
+                    const link = document.createElement('a');
+                    link.href = pdf;
+                    link.download = pdf.substring(pdf.lastIndexOf('/') + 1); // Extract file name
+                    link.click(); // Simulate click to start download
+                    
+                    // Alert the user that the PDF has been downloaded
+                    alert('PDF downloaded successfully!');
+                    
+                    // Redirect to userLearn.html after download initiation
+                    window.location.href = 'userLearn.html'; 
+                });
+            })
+            .catch(error => {
+                console.error('Error loading module details:', error);
+                alert('Failed to load PDF.');
+            });
+    } else {
+        console.error('Module ID not found in URL');
+    }
+});
+</script>
+
+</body>
+</html>

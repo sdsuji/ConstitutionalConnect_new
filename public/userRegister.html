@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ConstitutionalConnect</title>
+    <link rel="icon"  href="Src/images/favicon.jpeg">
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="jquery-3.7.1.min.js"></script>
+    <link rel="stylesheet" href="landingPage.css">
+    <link rel="stylesheet" href="userRegister.css">
+    <script src="userRegister.js" defer></script> 
+</head>
+<body>
+    <div class="container-fluid p-0">
+       
+            <div class="third-div hidden">
+                <div class="second-container">
+                    <form id="registrationForm" method="post">
+                        <h1>Register</h1>
+                        <div class="input-box2">
+                            <input type="text" placeholder="Name" id="name_register" >
+                            <span id="nameError" class="error"></span>
+                            <input type="text" placeholder="Profession" id="profession_register" >
+                            <span id="professionError" class="error"></span>
+                            <input type="text" placeholder="Institution/Organisation Name" id="Institution_register">
+                            <span id="institutionError" class="error"></span>
+                            <input type="text" placeholder="Email Address" id="email_id_register">
+                            <span id="emailError" class="error"></span>
+                            <input type="tel" placeholder="Phone number" id="phoneno_register">
+                            <span id="phoneError" class="error"></span>
+                            <input type="password" placeholder="Password" id="password_register">
+                            <span id="passwordError" class="error"></span>
+                            <input type="password" placeholder="Confirm Password" id="confirm_password_register">
+                            <span id="confirmPasswordError" class="error"></span>
+                            <label id="successMessage" style="display:none;"></label>
+                        </div>  
+                        <div>
+                            <button type="submit" class="btn btn-success">Register</button>
+                            <p id="statusLabel"></p>
+                        </div>
+                        <div class="login">
+                            <a href="userLogin.html">Already a user? Login</a>  
+                        </div>   
+                    </form>
+                </div>
+            </div>
+        
+    </div>
+</body>
+</html>

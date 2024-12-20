@@ -1,0 +1,41 @@
+#video-container {
+    width: 80%;
+    max-width: 800px;
+    margin: 90px auto 20px auto; /* Margin at the top and bottom */
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    
+}
+
+/* Video title */
+#video-title {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Video player styling */
+#video-player {
+    width: 100%;
+    height: 400px;  /* Change the height to 400px or your preferred value */
+    border-radius: 8px;
+}
+
+/* Add responsiveness for smaller screens */
+@media (max-width: 768px) {
+    #video-container {
+        width: 95%;
+    }
+    
+    #video-title {
+        font-size: 1.5rem;
+    }
+    
+    #video-player {
+        height: 350px;
+    }
+}

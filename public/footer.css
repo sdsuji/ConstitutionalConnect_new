@@ -1,0 +1,39 @@
+.footer-sec {
+    justify-content: center;
+    padding:5px 5px 5px 5px;
+    background-color: #045F47;
+    background-image: linear-gradient(to right, #003332, #034c36, #Bdcdcf);
+    bottom:0;    
+    width: 100%;
+    left: 0;   
+    position: fixed;
+}
+.footer-sec p {
+        color: white;
+        text-align:center;
+        font-size: large;
+    }
+.social-icons{
+    display:flex;
+    justify-content:center;  
+}
+    .social-icons a {
+        padding: 10px;
+        margin: 5px ;
+        text-decoration: none;
+        background-color: transparent;
+        border-radius: 50%;
+    }
+    .social-icons a:hover
+    {
+        background-color: #ff812b;
+        text-decoration: none;
+    }
+.profile-icon
+{
+    color: white;
+}
+.profile-icon:hover
+{
+    color: white;
+}

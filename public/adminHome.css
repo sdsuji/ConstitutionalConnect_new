@@ -1,0 +1,63 @@
+html, body {
+    height: 100%; 
+    margin: 0; 
+    background-image: linear-gradient(to right, #003332, #034c36, #bdcdcf);
+}
+
+
+/* Banner image style */
+.banner_image {
+    margin-top: 10px;
+    width: 100vw;  
+    height: auto;  
+    display: block; 
+    object-fit: cover; 
+}
+
+.main_contents {
+    margin-top: 100px;
+    padding: 20px; 
+    background-color: transparent;
+    border: 2px solid white;
+    border-radius: 10px;
+    display: flex; 
+    gap: 10px;
+    flex-wrap: wrap; 
+}
+
+.userStats {
+    margin: 0; 
+    flex: 1; 
+    max-width: 200px; 
+    height: 200px; 
+    padding: 10px;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    background-image: url('Src/images/no-of-user.png');
+    border: 2px solid white;
+    background-repeat: no-repeat;
+    background-size: cover; 
+    background-position: center; 
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease; 
+}
+
+.userStats p {
+    font-size: 18px;
+    color: black;
+}
+
+/* Hover effect for user statistics */
+.userStats:hover {
+    background-color: rgba(255, 255, 255, 0.1); 
+    transform: scale(1.05); 
+}
+
+
+@media (max-width: 768px) {
+    .userStats {
+        width: 100%; 
+        margin: 10px auto; 
+    }
+}

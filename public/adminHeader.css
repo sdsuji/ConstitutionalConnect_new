@@ -1,0 +1,131 @@
+header nav {
+    display: flex;
+    background-color: #045F47;
+    background-image: linear-gradient(to right, #003332, #034c36, #Bdcdcf);
+    margin-top: 0;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;  
+    padding: 8px 0;
+    justify-content: space-between;  
+    align-items: center;  
+}
+
+/* Profile icon */
+nav div {
+    margin-left: auto;
+    margin-right: 15px;  
+    position: relative; 
+    z-index: 1001; 
+}
+
+/* Profile icon styling */
+.profile-icon {
+    font-size: 15px;
+    color: white;
+    background-color: #045F47;
+    border-radius: 50%;
+    padding: 10px;
+    text-align: center;
+}
+
+.profile-icon:hover {
+    background-color: #90EE90;
+    cursor: pointer;
+}
+
+/* Remove overflow:hidden from navbar to allow dropdown visibility */
+header nav {
+    overflow: visible;  
+}
+
+/* Dropdown menu */
+nav div .dropdown_menu {
+    display: none;  
+    position: absolute;
+    top: 100%; 
+    right: 0;  
+    background-color: transparent; 
+    border: 2px solid white; 
+    padding: 5px 0;
+    list-style-type: none;  
+    margin: 0;
+    border-radius: 5px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);  
+    z-index: 1002; 
+    width: 200px;
+    backdrop-filter: blur(20px); 
+}
+
+/* Dropdown items */
+nav div .dropdown_menu li {
+    padding: 5px 20px;
+    color: #045F47;  
+    text-align: center;
+    cursor: pointer; 
+    font-weight: bold;
+}
+
+/* Hover effect on dropdown items */
+nav div .dropdown_menu li:hover {
+    color:#fbfada;  
+    background-image: linear-gradient(to right, #003332, #034c36, #Bdcdcf);
+    border-radius: 22px;
+    
+}
+
+/* Show dropdown when profile icon is hovered or clicked */
+nav div:hover .dropdown_menu {
+    display: block;  
+}
+
+/* transition for a smooth appearance */
+nav div .dropdown_menu {
+    transition: opacity 0.3s ease-in-out;
+    opacity: 0;
+}
+
+nav div:hover .dropdown_menu {
+    opacity: 1;
+}
+
+/* Navigation links */
+nav a {
+    position: relative;
+    font-size: 23px;
+    text-decoration:none;
+    padding: 14px 20px;
+    color: #fbfada;
+    text-align: center;
+}
+
+nav a.active {
+    color: #ff812b;
+}
+
+nav a:hover {
+    color: #90EE90;
+    backdrop-filter: blur(20px);
+    text-decoration: none;
+}
+
+/* Hover effect with span */
+nav a span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-bottom: 3px solid #90EE90;
+    border-radius: 22px;
+    transform: scale(0) translateY(50px);
+    opacity: 0;
+    transition: 0.5s;
+}
+
+nav a:hover span {
+    transform: scale(1) translateY(0);
+    opacity: 1;
+}

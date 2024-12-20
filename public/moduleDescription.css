@@ -1,0 +1,53 @@
+/* Module Details Section */
+#module-details {
+    margin: 50px auto;
+    max-width: 800px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Title styling */
+#module-title {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Description styling */
+#module-description {
+    font-size: 1.2rem;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+/* Start Learning Button */
+#start-learning-btn {
+    display: inline-block;
+    padding: 12px 25px;
+    background-color: #4CAF50;
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+
+#start-learning-btn:hover {
+    background-color: #45a049;
+}
+
+/* Optional: Add some spacing between the button and description */
+#start-learning-btn {
+    margin-top: 20px;
+    display: block;
+    width: 100%;
+    max-width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+}
