@@ -1,7 +1,7 @@
 
 document.addEventListener('DOMContentLoaded', async () => {
     try {
-        const response = await fetch('http://localhost:3000/admin/users/count');
+        const response = await fetch('/admin/users/count');
         const data = await response.json();
 
         if (response.ok) {

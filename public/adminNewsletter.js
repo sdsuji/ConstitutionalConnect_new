@@ -21,7 +21,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
 
         try {
-            const response = await fetch('http://localhost:3000/admin/newsletter', {
+            const response = await fetch('/admin/newsletter', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json', // Set content type as JSON

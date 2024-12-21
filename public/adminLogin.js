@@ -94,7 +94,7 @@ document.getElementById('loginForm').addEventListener('submit', async (e) => {
     if (isValid) {
        
         try {
-            const response = await fetch('http://localhost:3000/admin/login', {
+            const response = await fetch('/admin/login', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',

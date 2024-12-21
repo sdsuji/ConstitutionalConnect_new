@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     noNewslettersMessage.style.display = 'none'; // Hide the message initially
 
     try {
-        const response = await fetch('http://localhost:3000/admin/newsletters');
+        const response = await fetch('/admin/newsletters');
         const newsletters = await response.json();
 
         if (newsletters.length === 0) {
@@ -46,7 +46,7 @@ async function deleteNewsletter(newsletterId) {
     yesButton.textContent = 'Yes';
     yesButton.addEventListener('click', async () => {
         try {
-            const response = await fetch(`http://localhost:3000/admin/newsletter/${newsletterId}`, {
+            const response = await fetch(`/admin/newsletter/${newsletterId}`, {
                 method: 'DELETE',
             });
 

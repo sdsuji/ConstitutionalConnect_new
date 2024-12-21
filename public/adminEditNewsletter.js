@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     }
 
     try {
-        const response = await fetch(`http://localhost:3000/admin/newsletter/${newsletterId}`);
+        const response = await fetch(`/admin/newsletter/${newsletterId}`);
         const newsletter = await response.json();
 
         if (!newsletter) {
